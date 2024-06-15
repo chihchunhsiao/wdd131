@@ -56,7 +56,7 @@ h1, h2 {
 
 main {
     display: grid;
-    width: auto;
+    max-width: auto;
     
     grid-template-columns: 2fr 1fr;
     grid-gap: .5rem;    
@@ -77,6 +77,10 @@ main {
     height: auto;
 }
 
+.taiwan img{
+    float: right;
+}
+
 .card p {
     display: block;
     height: 6rem;
@@ -84,7 +88,7 @@ main {
     text-align: center;
     position: absolute;
     top: 380px;
-    left: 250px;
+    left: 300px;
     font-size: 20px;
 }
 
