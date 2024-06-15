@@ -1,14 +1,17 @@
-// Get the last modified date and time
+// first <p>
+
 const currentyear = document.querySelector("#currentyear");
-const lastModified = document.lastModified("#lastModified");
+
+const today = new Date();
+
+currentyear.innerHTML = `&copy;<span class="highlight">${today.getFullYear()}</span> 🐳 Chih Chun Hsiao 🐳`;
+
+// second <p>
+
+// Get the last modified date
+const lastModified = new Date(document.lastModified);
+
+lastModified.innerHTML = `Last Modification: <span class="highlight">${lastModified.getDate()}/${lastModified.getMonth()}/${lastModified.getFullYear()} ${lastModified.getHours()}:${lastModified.getMinutes()}:${lastModified.getSeconds()}</span>; 
 
 
-currentyear.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
-
-lastModified.innerHTML = `Last modification: <span class="highlight">${new Intl.DateTimeFormat(
-	"en-US",
-	{
-		dateStyle: "lastModified"
-	}
-).format(today)}</span>`; 
 
