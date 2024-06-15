@@ -8,10 +8,11 @@ currentyear.innerHTML = `&copy;<span class="highlight">${today.getFullYear()}</s
 
 // second <p>
 
+const lastModified = document.querySelector("#lastModified");
 // Get the last modified date
-const lastModified = new Date(document.lastModified);
+const lastModifiedDate = new Date(document.lastModified);
 
-lastModified.innerHTML = `Last Modification: <span class="highlight">${lastModified.getDate()}/${lastModified.getMonth()}/${lastModified.getFullYear()} ${lastModified.getHours()}:${lastModified.getMinutes()}:${lastModified.getSeconds()}</span>`; 
+lastModified.innerHTML = `Last Modification: <span class="highlight">${lastModifiedDate.getDate()}/${lastModifiedDate.getMonth()}/${lastModifiedDate.getFullYear()} ${lastModifiedDate.getHours()}:${lastModifiedDate.getMinutes()}:${lastModifiedDate.getSeconds()}</span>`; 
 
 
 
