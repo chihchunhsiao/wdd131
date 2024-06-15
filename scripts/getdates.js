@@ -12,7 +12,7 @@ const lastModified = document.querySelector("#lastModified");
 // Get the last modified date
 const lastModifiedDate = new Date(document.lastModified);
 
-lastModified.innerHTML = `Last Modification: <span class="highlight">${lastModifiedDate.getDate()}/${lastModifiedDate.getMonth()}/${lastModifiedDate.getFullYear()} ${lastModifiedDate.getHours()}:${lastModifiedDate.getMinutes()}:${lastModifiedDate.getSeconds()}</span>`; 
+lastModified.innerHTML = `Last Modification: <span class="highlight">${lastModifiedDate.getDate()}/${lastModifiedDate.getMonth() + 1}/${lastModifiedDate.getFullYear()} ${lastModifiedDate.getHours()}:${lastModifiedDate.getMinutes()}:${lastModifiedDate.getSeconds()}</span>`; 
 
 
 
