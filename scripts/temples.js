@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const today = new Date();
 
-    currentyear.innerHTML = `&copy;<span class="highlight">${today.getFullYear()}</span> 🐳 Chih Chun Hsiao 🐳 Taiwan`;
+    currentyear.innerHTML = `<span class="highlight">${today.getFullYear()}</span> `;
 
     // second <p>
 
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Get the last modified date
     const lastModifiedDate = new Date(document.lastModified);
 
-    lastModified.innerHTML = `Last Modification: <span class="highlight">${lastModifiedDate.getDate()}/${lastModifiedDate.getMonth() + 1}/${lastModifiedDate.getFullYear()} ${lastModifiedDate.getHours()}:${lastModifiedDate.getMinutes()}:${lastModifiedDate.getSeconds()}</span>`; 
+    lastModified.innerHTML = `<span class="highlight">${lastModifiedDate.getDate()}/${lastModifiedDate.getMonth() + 1}/${lastModifiedDate.getFullYear()} ${lastModifiedDate.getHours()}:${lastModifiedDate.getMinutes()}:${lastModifiedDate.getSeconds()}</span>`; 
     
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('open');
         title.style.display = navLinks.classList.contains('open') ? 'none' : 'block';
-        hamburger.textContent = navLinks.classList.contains('open') ? 'X' : '☰';
+        hamburger.textContent = navLinks.classList.contains('show') ? 'X' : '☰';
     });
 });
 
