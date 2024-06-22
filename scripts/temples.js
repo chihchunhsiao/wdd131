@@ -15,14 +15,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     lastModified.innerHTML = `<span class="highlight">${lastModifiedDate.getDate()}/${lastModifiedDate.getMonth() + 1}/${lastModifiedDate.getFullYear()} ${lastModifiedDate.getHours()}:${lastModifiedDate.getMinutes()}:${lastModifiedDate.getSeconds()}</span>`; 
     
-    const hamburger = document.querySelector('.hamburger');
+    const menuButton = document.querySelector('.menuButton');
     const navLinks = document.querySelector('.nav-links');
     const title = document.querySelector('.title');
 
-    hamburger.addEventListener('click', () => {
+    menuButton.addEventListener('click', () => {
         navLinks.classList.toggle('open');
         title.style.display = navLinks.classList.contains('open') ? 'none' : 'block';
-        hamburger.textContent = navLinks.classList.contains('show') ? 'X' : '☰';
+        menuButton.textContent = menuButton.classList.contains('show') ? 'X' : '☰';
     });
 });
 
