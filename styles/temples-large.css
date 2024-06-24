@@ -35,8 +35,9 @@
     }
 
     .nav-links a:hover {
-        background-color : purple;
-        color : white;        
+        background-color : black;
+        color : white;   
+             
     }
 
     main {
@@ -44,6 +45,7 @@
         max-width : 1000px;
         margin : 0 auto;
         text-align : center;
+
     }
 
     .images {
