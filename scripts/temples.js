@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     menuButton.addEventListener('click', () => {
         navLinks.classList.toggle('open');
         title.style.display = navLinks.classList.contains('open') ? 'none' : 'block';
-        menuButton.textContent = menuButton.classList.contains('show') ? '☰' : 'X';
+        menuButton.textContent = menuButton.classList.contains('show') ? '☰' : 'X';       
         menuButton.classList.toggle('show');
     });
       
