@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Hsichu Taiwan - Chih Chun Hsiao</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. A Hsichun Taiwan webpage.">
+        <meta name="author" content="Chih Chun Hsiao">
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place-large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="scripts/place.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="title">Taitung Taiwan</h1>         
+        </header>
+        
+        <main>            
+            <div class="hero">
+                <picture>               
+                    <source srcset="images/taitung-large.webp" media="(min-width: 1000px)">
+                    <source srcset="images/taitung-medium.webp" media="(min-width: 500px)">                                    
+                    <img src="images/taitung-small.webp" alt="Taitung Taiwan" width="450" height="300">
+                </picture>
+                <div class="data">
+                    <h2 class="data1">Data</h2>
+                    <ul class="databox">
+                        <li>Area:</li>
+                        <li>109.8 sq km</li>
+                        <li>Population:</li>
+                        <li>106900</li>
+                        <li>Languge:</li>
+                        <li>Mandarin</li>
+                        <li>Currency:</li>
+                        <li>New Taiwan dollar</li>
+                        <li>Time Zone:</li>
+                        <li>UTC+8</li>
+                        <li>Calling Code:</li>
+                        <li>+886</li>
+                        <li>Famous Festival:</li>
+                        <li>Taiwan International Balloon Festival</li>
+                        <li>Internet TLD:</li>
+                        <li>.tw</li>
+                    </ul>
+                </div>
+                <div class="weather" >
+                    <h2 class="weather1">Weather</h2>                    
+                    <div class="sunny-svg">
+                        <img src="images/sunny-icon.svg" alt="Icon" width="80" height="80">
+                    </div>
+                    <ul class="weatherbox">
+                        <li>Temperature:</li>
+                        <li>32 &deg;C</li>
+                        <li>Conditions: </li>
+                        <li>Hot Sun</li>
+                        <li>Wind:</li>
+                        <li>9 km/h</li>
+                        <li>Wind Chill:</li>
+                        <li><span id="wind-chill"></span></li>                       
+                    </ul>    
+                </div>
+            </div>             
+        </main>
+
+        <footer>            
+            <p>&copy;<span id="currentyear"></span>🐳 Chih Chun Hsiao 🐳 Taiwan</p>                           
+            <p>Last Modification:<span id="lastModified"></span></p>                  
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+@media only screen and (min-width: 640px){    
+    header {
+        display: block;
+        justify-content : space-between;
+        align-items : center;
+        padding : 3rem 1rem;
+        
+    }
+
+
+    main {
+        background-color: var(--section-color);
+    }
+
+    .title {
+        background: blue;
+        font-weight: 700;
+        font-size: 4em;
+        text-align: center;
+        color: #fff;
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+    }    
+
+    h2 {
+        background-color: var(--section-color);
+        
+        font-size: 2.5em;
+        grid-row: 2/3;
+        line-height: 2em;
+        
+        right: 0.22em;
+        text-align: left;
+        text-indent: 0.43em;
+    }         
+
+    .weather1::after {
+        content: " ⛅";
+    }
+
+    li {
+        color: var(--b)
+         
+        
+    }
+
+    .sunny-svg {
+        display: none;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .weatherbox {
+        position:absolute;
+        top: 180px;
+        right: 10px;
+        width: 18%;
+        height: 10%; 
+        opacity: 0.7;
+        background-color: var(--f);
+        padding: 3rem 0rem 2rem 0rem; 
+        z-index: 1;
+        text-indent: 1.5em;
+        margin-top: 3em;
+        
+    }   
+
+    .weather1 {
+        position:absolute;
+        top: 150px;
+        right: 50px;
+        width: 20%;
+        height: 10%; 
+        float: right;
+        opacity: 0.8;
+        z-index: 2;
+        
+    }
+
+
+    .data1 {
+        position:absolute;
+        top: 15px;
+        left: 35px;
+        width: 18%;
+        height: 10%;         
+        opacity: 0.8;
+        float: left;
+        z-index: 2;
+    }
+
+    .databox {
+        position:absolute;
+        top: 60px;
+        left: 30px;
+        width: 18%;
+        height: 30%;         
+        opacity: 0.7;
+        background-color: var(--f);        
+        z-index: 1; 
+        padding: 3rem 1rem 2rem 1rem; 
+    }
+
+}
