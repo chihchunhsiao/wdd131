@@ -39,9 +39,7 @@
     }
 
     li {
-        color: var(--b)
-         
-        
+        color: var(--b);                 
     }
 
     .sunny-svg {
