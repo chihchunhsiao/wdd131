@@ -111,11 +111,6 @@ footer {
     color: #fff;
 }
 
-p {
-    font-size: 0.8 rem;
-    color: #fff;
-    background-color: var(--backgroun-color);
-}
 
 .lastModification {
     color: white;
@@ -125,7 +120,7 @@ p {
     color: white;
 }
 
-span {
+span, p {
     font-size: 0.8rem;
     color: #fff;
     background-color: var(--backgroun-color);

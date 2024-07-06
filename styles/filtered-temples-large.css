@@ -71,7 +71,17 @@
         flex-direction: column;
     }
 
+    span, p {
+        font-size: 1.2rem;
+        color: #fff;
+        background-color: var(--backgroun-color);
+    }
 
+    h3 {   
+        color:#000;
+        font-size: 1.3rem;
+        margin-bottom: 5%;
+    }
 
 }
 
