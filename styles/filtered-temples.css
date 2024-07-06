@@ -14,12 +14,13 @@ body {
     font-family: var(--font-family);
     font-style: normal;
     color: white;
+    
 }
 
 h2 {
     color: rgb(99, 19, 186);
     font-family: var(--font-family);
-    font-size: 1.5 rem;
+    font-size: 1.5rem;
 }
 
 header {
