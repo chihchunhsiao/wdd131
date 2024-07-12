@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Review Form - Chih Chun Hsiao</title>
+        <meta name="description" content="WDD 131 - A Product Review Form.">
+        <meta name="author" content="Chih Chun Hsiao">
+        <link rel="stylesheet" href="styles/form.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="scripts/form.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <main>                   
+                        
+            <form class="form" method="get" action="review.html"> 
+                <!-- action defines the location (URL) where the form data will be submitted when the user hits submit. -->
+                
+                <label>Product Name 
+                    <select id="prodName" name="productName" required>
+                        <option value selected disabled>Select a Product ...</option>                           
+                    </select>
+                </label>
+                
+    
+                <label>Overall Rating</label> 
+                    <label for="onestar"><input id="onestar" type="radio" name="rating" value="1" required>&star;</label>
+                    <label for="twostars"><input id="twostars" type="radio" name="rating" value="2" required>&star;&star;</label>
+                    <label for="threestars"><input id="threestars" type="radio" name="rating" value="3" required>&star;&star;&star;</label>
+                    <label for="fourstars"><input id="fourstars" type="radio" name="rating" value="4" required>&star;&star;&star;&star;</label>
+                    <label for="fivestars"><input id="fivestars" type="radio" name="rating" value="5" required>&star;&star;&star;&star;&star;</label>
+                            
+                
+                <label>Date of Installation 
+                    <label for="date"><input id="date" type="date" name="complete" required></label>
+                </label>
+
+                <label>Which features did you find usefel in the product?</label>
+                    <span class="checkbox">(Check all that apply)</span>
+                    <label for="feature1"><input id="feature1" type="checkbox" name="durability" value="durability">Durability</label>
+                    <label for="feature2"><input id="feature2" type="checkbox" name="ease of use" value="ease of use">Ease of Use</label>
+                    <label for="feature3"><input id="feature3" type="checkbox" name="performance" value="performance">Performance</label>
+                    <label for="feature4"><input id="feature4" type="checkbox" name="design" value="design">Design</label>
+                </label>
+
+                <label>Written Review (Optional)
+                
+                    <label for="written-review"><textarea id="written-review" name="WrittenReview" rows="5"></textarea></label>
+                </label>
+
+                <label>Your Name (Optional)               
+                    <label for="name"><input type="text" id="name" name="name"></label>
+                </label>
+
+                <input type="submit" value = "Post Review">
+                
+            </form>
+        </main>
+
+        <footer>            
+            <p>&copy;<span id="currentyear"></span>🐳 Chih Chun Hsiao 🐳 Taiwan</p>                           
+            <p>Last Modification:<span id="lastModified"></span></p>                  
+        </footer>
+        
+    </body>
+
+</html>
+
+    
+    
