@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   reviewCounter++;
   localStorage.setItem('reviewCounter', reviewCounter);
-  document.getElementById('review-counter').textContent = reviewCounter;
+  document.getElementById('review-counter').innerHTML = reviewCounter;
 });
 
 
