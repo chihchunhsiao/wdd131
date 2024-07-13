@@ -47,22 +47,22 @@ products.forEach(item => {
     productName.appendChild(option);
 });
 
-// 1️. initialize display element variable
-const countsDisplay = document.querySelector(".counts");
 
-// 2. Get the stored VALUE for the numCounts-ls KEY in localStorage if it exists. If the numCounts KEY is missing, then assign 0 to the numCounts variable.
-let numCounts = Number(window.localStorage.getItem("numCounts-ls")) || 0;
+// Review submition count.
+document.addEventListener('DOMContentLoaded', function() {
+  let reviewCounter = localStorage.getItem('reviewCounter');
+  if (!reviewCounter) {
+      reviewCounter = 0;
+  } else {
+      reviewCounter = parseInt(reviewCounter); 
+  }
+  reviewCounter++;
+  localStorage.setItem('reviewCounter', reviewCounter);
+  document.getElementById('review-counter').textContent = reviewCounter;
+});
 
-// 3️. Determine if this is the first count or display the number of counts. We wrote this example backwards in order for you to think deeply about the logic.
-if (numCounts !== 0) {
-	countsDisplay.textContent = numCounts;
-} else {
-	countsDisplay.textContent = "Not submitted for review!";
-}
 
-// 4️. increment the number of counts by one.
-numCounts++;
 
-// 5️. store the new count total into localStorage, key=numCounts-ls
-localStorage.setItem("numCounts-ls", numCounts);
+
+
 

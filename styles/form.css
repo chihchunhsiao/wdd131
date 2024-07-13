@@ -38,7 +38,7 @@ main {
     background-color: var(--secondary-color);
     padding: 1rem;
     margin: 0 auto; 
-    max-width: 450px; 
+    max-width: 400px; 
 }
 
 .form label {
@@ -48,10 +48,7 @@ main {
     font-size: 1.3rem;
 }
 
-
-
-
-
+  
 input[type=checkbox] {
     margin: 10px 0 0 0;
     
@@ -83,8 +80,9 @@ option {
     font-weight: 700;    
 }
 
-#counts {
+#visits {
 	color: navy;
 	font-weight: bolder;
 	font-size: larger;
 }
+
