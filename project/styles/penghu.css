@@ -1,0 +1,184 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1.0rem;
+}
+
+:root {
+    --Primary-color: #65B067;
+    --Secondary-color: #B3578A;
+    --Heading-color: #4D111A;
+    --Paragraph-color: #E6DB15;
+    --Background-color: #FFFFFF;
+    --Heading-fonts: Roboto, sans-serif;
+    --Text-fonts: Arial, Helvetica, sans-serif;
+    
+}
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    display: block;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;    
+} 
+
+.herop {
+    position: absolute;
+    bottom: 160px;       
+    left: 20px;
+    right:20px;
+    color: white;
+    background-color: rgba(14, 27, 168, 0.8);
+    padding: 10px;
+    z-index: 2;
+    font-size: 0.7rem;
+}
+
+header, footer {    
+    background-color: var(--Heading-color);
+    padding: 20px 0 20px 0; 
+    margin: 10px 0 10px 0;  
+    max-width: 100%; 
+    text-align: center; 
+    color: var(--Background-color);
+}
+
+div {
+    margin: 10px 0 10px 0;
+    background-color: var(--Paragraph-color);
+    padding: 10px 20px 10px 20px;
+}
+
+.title {
+    display: block;
+    text-align: center;
+}
+
+.menubutton {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    background : none;
+    border : none;
+    color : white;
+    font-size : 2rem;
+    cursor : pointer;
+}
+
+.nav-links {
+    list-style : none;
+    padding : 0;
+    margin : 0;
+    display : none;
+    flex-direction : column;
+    background-color : purple;
+    width : 100%;
+}
+
+.nav-links.open {
+    display : flex;
+}
+
+.nav-links li {
+    margin : 0.5rem 0;
+}
+
+.nav-links a {
+    color : white;
+    text-decoration : none;
+    padding : 0.5rem 1rem;
+    display : block;
+    text-align : center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-family: var(--Heading-fonts);
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-family: var(--Heading-fonts); 
+    text-align: center;   
+}
+
+.penghu p {
+    font-size: 1.0rem;
+    font-family: var(--Text-fonts);
+    padding: 5px;
+    color: black;
+    text-align: center;
+    background-color: var(--Paragraph-color);
+}
+
+.open {
+    background-color: var(--backgroun-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.show {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 9;
+    color: black;
+}
+
+.nav-links a:hover {
+    background-color : black;
+    color : white;        
+}
+
+.menuButton::before {
+    content: "≡"; 
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    z-index: 9;
+    font-size:1.2rem;
+    background-color: var(--Background-color);
+}
+
+.menuButton.show::before {
+    content: "✖️";
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 9;
+    font-size:1.2rem;    
+}
+
+figcaption {
+    display : grid;
+    grid-template-columns : 1fr;
+    gap : 1rem;
+    text-align: center;
+    
+}
+.penghu img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+

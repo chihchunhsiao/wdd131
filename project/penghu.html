@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> Penghu Tourism </title>
+        <meta name="description" content="The Penghu Tourism Website includes an introduction of Penghu location, Geology, Hakka Culture and contact information.">
+        <meta name="author" content="Chih Chun Hsiao">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/penghu.css">
+        <link rel="stylesheet" href="styles/penghu-large.css">
+        <script src="scripts/penghu.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1 class="title">Penghu Tourism</h1>                       
+            <nav>
+                <button class="menuButton" aria-label="Menu Button"></button>
+                <ul class="nav-links">
+                    <li><a href="penghu.html">About Penghu</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="geology.html">Geology</a></li>
+                    <li><a href="culture.html">Hakka Culture</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+            </nav>
+        </header>
+
+        <main>            
+            <h2>About Penghu</h2>
+            <div class="hero">                
+                <picture>               
+                    <source srcset="images/basalt-1200x800.webp" media="(min-width: 1000px)" width="1200" height="800"> 
+                    <source srcset="images/basalt-600x400.webp" media="(min-width: 500px)" width="600" height="400">                                  
+                    <img src="images/basalt-450x300.webp" alt="Penghu Columnar Basalt" loading="lazy" width="450" height="300">
+                </picture>
+                <p class="herop">Penghu is a wonderful place for tourism. In the world, there may be beautiful beaches, fantastic columnar basalts, special culture, and fresh seafood, but Penghu is a place where you can experience all of the above at the same time.
+                </p>
+            </div> 
+            <div class="penghu">                
+                <figure>
+                    <picture>                                                                   
+                        <img src="images/double-heart-450x300.webp" alt="Qimei Double Heart Stone Weir" loading="lazy" width="450" height="300">                                      
+                    </picture>  
+                    <figcaption>Qimei Double Heart Stone Weir</figcaption>  
+                </figure>
+                <figure>
+                    <picture>                                                                   
+                        <img src="images/theanhou-temple-450x300.webp" alt="Thean Hou Temple" loading="lazy" width="450" height="300">                    
+                    </picture>  
+                    <figcaption>Thean Hou Temple</figcaption> 
+                </figure>                       
+                <figure>
+                    <picture>                                                                   
+                        <img src="images/coral-house-450x300.webp" alt="Coral House & Erkan Historic Village" loading="lazy" width="450" height="300">
+                        
+                    </picture>
+                    <figcaption>Coral House & Erkan Historic Village</figcaption>
+                </figure>                                    
+            </div>  
+        </main>
+
+        <footer>            
+            <p>&copy;<span id="currentyear"></span>🐳 Chih Chun Hsiao 🐳 Taiwan</p>                           
+            <p>Last Modification:<span id="lastModified"></span></p>                  
+        </footer>
+    </body>
+</html>
+
+    
+
+
+

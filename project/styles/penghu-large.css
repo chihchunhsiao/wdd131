@@ -1,0 +1,83 @@
+@media only screen and (min-width: 640px) {       
+
+    .herop {        
+        bottom: -30%;       
+        left: 150px;
+        right:150px;        
+        font-size: 1.5rem;
+    }
+
+    
+
+    header {
+        display : flex;
+        justify-content : space-between;
+        align-items : center;
+        padding : 1.5rem 1rem;
+        
+    }
+
+    .title {
+        font-size : 2.0rem;
+        text-align: left;
+        padding: 0.5rem 0.5rem 0.5rem 3rem;
+        flex-grow : 1;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+
+    .menuButton {
+        display : none;
+    }
+
+	.nav-links {
+        display : flex;
+        justify-content : flex-end;
+        flex-direction : row;
+        flex-grow : 1;
+        position : static;
+        background-color : transparent;
+        width : auto;
+    }
+
+	.nav-links li {
+        margin : 0 5px;
+    }
+
+	.nav-links a {
+        
+        font-size : 1.2rem;
+    }
+
+    main {
+        padding : 1rem;
+        max-width : 100%;
+        margin : 0 auto;
+        text-align : center;
+    }
+
+    span, p {
+        font-size: 1.0rem; 
+        font-size: 1.2rem;
+        color: #fff;
+        background-color: var(--backgroun-color);
+    }
+
+    figcaption {
+        font-size: 1.2rem;        
+        font-weight: 600;
+
+    }
+
+    .penghu {
+        display: grid;
+        grid-template-columns : repeat(3, 1fr);
+        padding: 2% 5% 2% 5%;
+        gap: 0.5rem;        
+    }
+    
+    
+}
