@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> Penghu Culture </title>
+        <meta name="description" content="The Penghu culture webpage introduces the unique coral house, Hakka Culture, and the local characteristic belief center Thean Hou Temple.">
+        <meta name="author" content="Chih Chun Hsiao">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/penghu.css">
+        <link rel="stylesheet" href="styles/penghu-large.css">
+        <script src="scripts/penghu.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1 class="title">Penghu Tourism</h1>                       
+            <nav>
+                <button class="menuButton" aria-label="Menu Button"></button>
+                <ul class="nav-links">
+                    <li><a href="penghu.html">About Penghu</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="geology.html">Geology</a></li>
+                    <li><a href="culture.html">Hakka Culture</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+            </nav>
+        </header>
+
+        <main>            
+            <h2>Penghu Culture</h2>
+            <div class="hero">                
+                <picture>               
+                    <source srcset="images/theanhou-temple-1200x800.webp" media="(min-width: 1000px)" width="1200" height="800"> 
+                    <source srcset="images/theanhou-temple-900x600.webp" media="(min-width: 500px)" width="900" height="600">                                   
+                    <img src="images/theanhou-temple-450x300.webp" alt="Penghu Thean Hou Temple" loading="lazy" width="450" height="300">
+                </picture>
+                <p class="herop">Most of the Penghu Islands are composed of basalt. Basalt is a type of black rock comes from a volcano. After thousand years of weathering and erosion, basalt geology and landforms are everywhere in Penghu. Various carving of nature have amazed geologists and praised Penghu as "God's Stone Sculpture Park".                     
+                </p>
+            </div> 
+            <div class="location">                
+                <div>
+                    <figure>
+                        <picture>                                                                   
+                            <img src="images/theanhou-temple-450x300.webp" alt="Penghu Thean Hou Temple" loading="lazy" width="450" height="300">                                      
+                        </picture>  
+                        <figcaption>Penghu Thean Hou Temple</figcaption>     
+                    </figure>
+                    <p>Because most of the residents in Penghu are engaged in fishing. Facing the impact of the ever-changing sea area and the harsh climate of Penghu, they rely on the gods to support their hearts. Thean Hou Temple is the most representative temple building of local beliefs. 
+                    </p>
+                </div>
+                <div>
+                    <figure>
+                        <picture>                                                                   
+                            <img src="images/coral-house-450x300.webp" alt="Coral House & Erkan Historic Village" loading="lazy" width="450" height="300">                    
+                        </picture>  
+                        <figcaption>Coral House & Erkan Historic Village</figcaption>                   
+                    </figure>  
+                    <p>Have you heard of Coral House?<br> Erkan Village is a historic settlement located on the Penghu Islands. The village is known for its unique architectural and cultural heritage. It's buildings were made by local materials, such as coral stones, and basalt. 
+                    </p>                    
+                </div>
+
+                <div>
+                    <figure>
+                        <picture>                                                                   
+                            <img src="images/seafood1-450x300.webp" alt="Penghu Seafood" loading="lazy" width="450" height="300">                        
+                        </picture>
+                        <figcaption>Penghu Seafood</figcaption>       
+                    </figure> 
+                    <p>In Penghu, the land is barren and the climate is harsh. Penghu cannot produce farm products, but the sea generously nourishes Penghu people with seasonal seafood. You can easily enjoy delicious seafood in Penghu restaurants. 
+                    </p>
+                </div>
+                                                                 
+            </div>  
+        </main>
+
+        <footer>            
+            <div class="attributions">
+                <h3>Image Attributions</h3>
+                <ul>
+                    <li style="list-style-type: none;">**Image Penghu Geology:** Source: [https://www.penghu-nsa.gov.tw/AboutUs/A01.htm], Description: [Penghu National Scenic Area Headquarters, Tourism Administration, MOTC]</li>
+                    <li style="list-style-type: none;">**Image Daguoye Columnar Basalt:** Source: [https://eng.taiwan.net.tw/m1.aspx?sNo=0002125&id=A12-00232], Description: [TAIWAN WAVES OF WONDER]</li>
+                    <li style="list-style-type: none;">**Image Whale Cave :** Source: [http://www.vrwalker.net/tw/scenery_view.php?tbname=scenerys&serno=429], Description: [VR Walker]</li>
+                    <li style="list-style-type: none;">**Image Tongpan Island :** Source: [https://penghudaily.blogspot.com/2019/05/1_13.html], Description: [PH DAILY]<br></li>
+                </ul>
+            </div>          
+            <p>&copy;<span id="currentyear"></span>🐳 Chih Chun Hsiao 🐳 Taiwan</p>                           
+            <p>Last Modification:<span id="lastModified"></span></p>                  
+        </footer>
+    </body>
+</html>
