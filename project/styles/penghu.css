@@ -199,11 +199,14 @@ h2 {
     max-width: 350px;
 }
 
-.form label {
+.form label, .form p {
     padding-top: 2px;
     padding-bottom: 2px;
     color: black;
     font-size: 1.3rem;
+    font-family: Arial, sans-serif;
+    font-weight: 700;    
+    text-align: left;
 }
 
 input[type=checkbox] {
@@ -232,12 +235,6 @@ option {
     padding: 10px 0 10px 0;
 
 
-}
-
-label {   
-    font-family: Arial, sans-serif;
-    font-weight: 700;    
-    text-align: left;
 }
 
 .formback {
