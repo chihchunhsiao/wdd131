@@ -37,7 +37,7 @@ body {
 
 .herop {
     position: absolute;
-    bottom: 160px;       
+    top: 160px;       
     left: 20px;
     right:20px;
     color: white;
