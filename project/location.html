@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> Penghu Location </title>
+        <meta name="description" content="The Penghu Location webpage introduces the location of the Penghu Islands.">
+        <meta name="author" content="Chih Chun Hsiao">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/penghu.css">
+        <link rel="stylesheet" href="styles/penghu-large.css">
+        <script src="scripts/penghu.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1 class="title">Penghu Tourism</h1>                       
+            <nav>
+                <button class="menuButton" aria-label="Menu Button"></button>
+                <ul class="nav-links">
+                    <li><a href="penghu.html">About Penghu</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="geology.html">Geology</a></li>
+                    <li><a href="culture.html">Hakka Culture</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+            </nav>
+        </header>
+
+        <main>            
+            <h2>Penghu Location</h2>
+            <div class="hero">                
+                <picture>               
+                    <source srcset="images/penghu-location-1200x800.webp" media="(min-width: 1000px)" width="1200" height="800"> 
+                    <source srcset="images/penghu-location-900x600.webp" media="(min-width: 500px)" width="900" height="600">                                   
+                    <img src="images/penghu-location-450x300.webp" alt="Penghu Location" loading="lazy" width="450" height="300">
+                </picture>
+                <p class="herop">Penghu is a group of islands located in the Taiwan Strait, between the main island of Taiwan and mainland China. Penghu Islands have 90 large and small islands. 
+                </p>
+            </div> 
+            <div class="location">                
+                <figure>
+                    <picture>                                                                   
+                        <img src="images/penghu-island-450x300.webp" alt="Penghu Island Celestial Chrysanthemum" loading="lazy" width="450" height="300">                                      
+                    </picture>  
+                    <figcaption>Penghu Island</figcaption>     
+                </figure>
+                
+                <figure>
+                    <picture>                                                                   
+                        <img src="images/double-heart-450x300.webp" alt="Qimei Double Heart Stone Weir" loading="lazy" width="450" height="300">                    
+                    </picture>  
+                    <figcaption>Qimei Island</figcaption>                   
+                </figure>  
+                                    
+                <figure>
+                    <picture>                                                                   
+                        <img src="images/jibe-island-450x300.webp" alt="Jibe Island Shazui Bay" loading="lazy" width="450" height="300">                        
+                    </picture>
+                    <figcaption>Jibe Island</figcaption>       
+                </figure> 
+                <p>Penghu Island is the largest island in the Penghu Islands. The Tianren Chrysanthemum is the symbolic flower of the island. Penghu Island is also known as Chrysanthemum Island.</p>  
+                <p>Qimei Island is famous for its double heart stone weir which is a popular attraction in Penghu. Stone Weir is a kind of fishing trap in the intertidal zone. These stone walls were made by coral reef and basalt. Double-heart stone weir is the most complete and romantic stone weir in the world.</p>  
+                <p>Jibei Island is a popular base for summer vacation in Penghu, and Shazui Bay is especially famous. It is surrounded by rock formations and coral reefs, and the island is also rich in cultural landscapes and cultural sites.</p>                                 
+            </div>  
+        </main>
+
+        <footer>            
+            <div class="attributions">
+                <h3>Image Attributions</h3>
+                <ul>
+                    <li style="list-style-type: none;">**Image Penghu Location:** Source: [https://www.google.com.tw/maps/@23.8060226,119.1168488,8z?hl=zh-TW&entry=ttu], Description: [Google Map]</li>
+                    <li style="list-style-type: none;">**Image Penghu Island Celestial Chrysanthemum:** Source: [https://travel.ettoday.net/article/756871.htm], Description: [ETtoday]</li>
+                    <li style="list-style-type: none;">**Qimei Double Heart Stone Weir :** Source: [https://www.kkday.com/zh-tw/product/22315-chimei-island-wangan-island-ferry-ticket-motorcycle-rental-penghu-taiwan], Description: [kkday]</li>
+                    <li style="list-style-type: none;">**Image Jibe Island Shazui Bay :** Source: [https://www.penghu-nsa.gov.tw/AboutUs/A01.htm], Description: [Taiwan National Scenic Area Administration]<br></li>
+                </ul>
+            </div>          
+            <p>&copy;<span id="currentyear"></span>🐳 Chih Chun Hsiao 🐳 Taiwan</p>                           
+            <p>Last Modification:<span id="lastModified"></span></p>                  
+        </footer>
+    </body>
+</html>

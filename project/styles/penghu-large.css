@@ -1,6 +1,7 @@
 @media only screen and (min-width: 640px) {       
 
     .herop {        
+        position: absolute;
         bottom: -30%;       
         left: 150px;
         right:150px;        
@@ -66,17 +67,31 @@
         background-color: var(--backgroun-color);
     }
 
-    figcaption {
+    .penghu figcaption, .location figcaption {
         font-size: 1.2rem;        
         font-weight: 600;
 
     }
 
-    .penghu {
+    .penghu, .location {
         display: grid;
         grid-template-columns : repeat(3, 1fr);
         padding: 2% 5% 2% 5%;
         gap: 0.5rem;        
+    }
+
+    .location p {
+        font-size: 1.2rem;
+        font-family: var(--Text-fonts);
+        padding: 50px;
+        color: black;
+        text-align: left;
+        background-color: var(--Paragraph-color);
+        font-weight: 600;
+    }
+
+    .attributions h3, .attributions li {
+        font-size: 0.7rem;
     }
     
     

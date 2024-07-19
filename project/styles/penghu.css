@@ -36,7 +36,7 @@ body {
 } 
 
 .herop {
-    position: absolute;
+    
     bottom: 200px;       
     left: 20px;
     right:20px;
@@ -169,16 +169,29 @@ h2 {
     font-size:1.2rem;    
 }
 
-figcaption {
+.penghu figcaption, .location figcaption {
     display : grid;
     grid-template-columns : 1fr;
     gap : 1rem;
-    text-align: center;
-    
+    text-align: center;    
 }
-.penghu img {
+
+.penghu img, .location img {
     max-width: 100%;
     height: auto;
     object-fit: contain;
 }
+
+.attributions {   
+    background-color: var(--Heading-color);
+}
+
+.attributions h3, .attributions li {
+    font-size: 0.5rem;
+}
+
+
+
+
+
 
