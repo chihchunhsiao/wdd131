@@ -172,9 +172,9 @@ h2 {
 .penghu figcaption, .location figcaption {
     display : grid;
     grid-template-columns : 1fr;
-    gap : 1rem;
+    gap : 1.1rem;
     text-align: center;   
-    font-weight: 500; 
+    font-weight: 600; 
 }
 
 .penghu img, .location img {
