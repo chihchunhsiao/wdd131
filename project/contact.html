@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> Contact Us </title>
+        <meta name="description" content="The Contact webpage asks visitors to leave messages and personal information.">
+        <meta name="author" content="Chih Chun Hsiao">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/penghu.css">
+        <link rel="stylesheet" href="styles/penghu-large.css">
+        <script src="scripts/penghu.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1 class="title">Penghu Tourism</h1>                       
+            <nav>
+                <button class="menuButton" aria-label="Menu Button"></button>
+                <ul class="nav-links">
+                    <li><a href="penghu.html">About Penghu</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="geology.html">Geology</a></li>
+                    <li><a href="culture.html">Culture</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+            </nav>
+        </header>
+
+        <main>
+            <h1>Contact Us</h1>
+            <div class="formback">
+                <form class="form" method="get" action="info.html"> 
+                    <!-- action defines the location (URL) where the form data will be submitted when the user hits submit. -->
+                    <label>Fields marked * are required.<br></label>
+                    <label for="name">*Name:</label>              
+                        <input type="text" id="name" name="name" required><br>
+                    
+                    <label for="email">*Email:</label>               
+                        <input type="email" id="email" name="email" required><br>
+                    
+    
+                    <label for="infoType">*Info Type:</label>
+                        <select id="infoType" name="infoType">
+                            <option value selected disabled>Select topic ...</option>                         
+                        </select><br>  
+                                       
+                    <label  for="date">Visit Date</label>
+                        <input id="date" type="date" name="visit" required><br> 
+                    
+    
+                    <label>Which introductory topics on Penghu Tourism Network are useful to you? (Optional)<br>(Check all that apply)<br></label>                    
+                        <label for="topic1"><input id="topic1" type="checkbox" name="location" value="locatoin">Locatoin</label>
+                        <label for="topic2"><input id="topic2" type="checkbox" name="geology" value="geology">Geology</label>
+                        <label for="topic3"><input id="topic3" type="checkbox" name="culture" value="culture">Culture</label><br>
+    
+                    <label for="message">Message: (Optional)                
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </label>          
+                   
+                    <input type="submit" value = "Send">
+                    
+                </form>
+            </div>
+            
+
+        </main>
+
+        <footer>            
+            <p>&copy;<span id="currentyear"></span>🐳 Chih Chun Hsiao 🐳 Taiwan</p>                           
+            <p>Last Modification:<span id="lastModified"></span></p>                  
+        </footer>
+    </body>
+</html>
