@@ -173,7 +173,8 @@ h2 {
     display : grid;
     grid-template-columns : 1fr;
     gap : 1rem;
-    text-align: center;    
+    text-align: center;   
+    font-weight: 500; 
 }
 
 .penghu img, .location img {
