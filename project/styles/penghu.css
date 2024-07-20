@@ -199,7 +199,7 @@ h2 {
     max-width: 350px;
 }
 
-.form label, .form p {
+.form label, .form p, .form h2 {
     padding-top: 2px;
     padding-bottom: 2px;
     color: black;
